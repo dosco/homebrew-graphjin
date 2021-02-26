@@ -5,29 +5,29 @@
 class Graphjin < Formula
   desc "Build APIs in 5 minutes. An automagical GraphQL to SQL compiler."
   homepage "https://graphjin.com"
-  version "0.15.96"
+  version "0.15.97"
   license "Apache-2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dosco/graphjin/releases/download/v0.15.96/graphjin_0.15.96_Darwin_x86_64.tar.gz"
-    sha256 "46259a4a9d5d86a2e128e671a21ab70c960588199b234a8912d397810cd068fc"
+    url "https://github.com/dosco/graphjin/releases/download/v0.15.97/graphjin_0.15.97_Darwin_x86_64.tar.gz"
+    sha256 "85fedd16f88a0ab9e3a283c04d6a275049547919e2b0e45f2f37cd3f9b3685bb"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dosco/graphjin/releases/download/v0.15.96/graphjin_0.15.96_Darwin_arm64.tar.gz"
-    sha256 "3258a3f9bbf4b0e0e650c52d3455d668c2c0e29753a7b95c2459c3d88c8ccee2"
+    url "https://github.com/dosco/graphjin/releases/download/v0.15.97/graphjin_0.15.97_Darwin_arm64.tar.gz"
+    sha256 "3ec5e8429a9cbcd0f0136a85085e9382c21463d85c210914913bb45d83816c48"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dosco/graphjin/releases/download/v0.15.96/graphjin_0.15.96_Linux_x86_64.tar.gz"
-    sha256 "d4687a5add454847e0e935303f3aedcc41fd7bc7659f2399bb5faadd62c87773"
+    url "https://github.com/dosco/graphjin/releases/download/v0.15.97/graphjin_0.15.97_Linux_x86_64.tar.gz"
+    sha256 "f3385de0e6ff320913a1dbaead218e614f9dea12676d465c280f5da9d6db275c"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/dosco/graphjin/releases/download/v0.15.96/graphjin_0.15.96_Linux_armv6.tar.gz"
-    sha256 "e0a2e0fbc1c4d22b94b3aeaf043802642ebf2419bbc3056916cdd15467a9d729"
+    url "https://github.com/dosco/graphjin/releases/download/v0.15.97/graphjin_0.15.97_Linux_armv6.tar.gz"
+    sha256 "a3c28cca2d0f2844ac67f7cbec97577ecf0031c019e70ff8f528cb34a01a8c36"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/dosco/graphjin/releases/download/v0.15.96/graphjin_0.15.96_Linux_arm64.tar.gz"
-    sha256 "9773658f95fc891628e2beb7ac88786dee53ba5c00104002de9fae874057a2b0"
+    url "https://github.com/dosco/graphjin/releases/download/v0.15.97/graphjin_0.15.97_Linux_arm64.tar.gz"
+    sha256 "393391f6d3350b4066ffc9634193c021c566300e762e3b7f7b73f80d7e022730"
   end
 
   def install
