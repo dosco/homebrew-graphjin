@@ -11,7 +11,7 @@ class Graphjin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dosco/graphjin/releases/download/v3.20.50/graphjin_3.20.50_darwin_amd64.tar.gz"
-      sha256 "f078a3fdbfe7ebfa65c873b51efba5a7b8d23be3f16ad0cab1a2bf16b571e09a"
+      sha256 "4df5f4b4766b7064b227f05733620dfaf666118d8462a9e7c6367c8946cb2eae"
 
       define_method(:install) do
         bin.install "graphjin"
@@ -19,7 +19,7 @@ class Graphjin < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dosco/graphjin/releases/download/v3.20.50/graphjin_3.20.50_darwin_arm64.tar.gz"
-      sha256 "2121abfd5017eea42d3ae93070183637a82833f9a3cb0aef35edae16f7404206"
+      sha256 "59825a5219851ceb3fcae8c6c8b346f52dd9ef1be390f54c437914ce6b79cc64"
 
       define_method(:install) do
         bin.install "graphjin"
@@ -30,21 +30,21 @@ class Graphjin < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dosco/graphjin/releases/download/v3.20.50/graphjin_3.20.50_linux_amd64.tar.gz"
-      sha256 "4c7321e68af692c8ac68090958b5897c04da9c4b23b0dce34e608be9d979c5eb"
+      sha256 "f67e117503c9265644e318fae08a687f091d2207840218f944d8ef79413ede9e"
       define_method(:install) do
         bin.install "graphjin"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/dosco/graphjin/releases/download/v3.20.50/graphjin_3.20.50_linux_armv6.tar.gz"
-      sha256 "d6b953976096852b7d88295edb20d096c2de9952bfe75b147546fe9a9e943269"
+      sha256 "6f58e6ec6a325b427a3e4d2c91f2d1070dd60ac49fabd99be1b23c5eb803fb0f"
       define_method(:install) do
         bin.install "graphjin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dosco/graphjin/releases/download/v3.20.50/graphjin_3.20.50_linux_arm64.tar.gz"
-      sha256 "149a3323b58f2b5a94bb2f3acdf6c6fde1b6d71ee2d7b8251cf465f9a1bc0806"
+      sha256 "7a4f599a35f4e3dd117a5d210a0f6b7d0a58791b47dbf3e96c27825d8ccf5c8c"
       define_method(:install) do
         bin.install "graphjin"
       end
