@@ -5,21 +5,21 @@
 class Graphjin < Formula
   desc "Build APIs in 5 minutes. An automagical GraphQL to SQL compiler."
   homepage "https://graphjin.com"
-  version "3.20.56"
+  version "3.20.57"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dosco/graphjin/releases/download/v3.20.56/graphjin_3.20.56_darwin_amd64.tar.gz"
-      sha256 "3c05525ad26bcbe74215596e38a18955ca494f17393a9d20264ec7ae9a00f225"
+      url "https://github.com/dosco/graphjin/releases/download/v3.20.57/graphjin_3.20.57_darwin_amd64.tar.gz"
+      sha256 "71dffd29e4a1fc7983386d4bbbc318cd47fca635ef10f1d6a54f5c1f474251c2"
 
       define_method(:install) do
         bin.install "graphjin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dosco/graphjin/releases/download/v3.20.56/graphjin_3.20.56_darwin_arm64.tar.gz"
-      sha256 "64433c139327b358d392ffede3d9202e9e8b7170b1ed220f8cf698c3d208ee9f"
+      url "https://github.com/dosco/graphjin/releases/download/v3.20.57/graphjin_3.20.57_darwin_arm64.tar.gz"
+      sha256 "41aa3e6abb18795fd96a5c84610e980ef1320632a3165aeb22ebe216b9ea97b7"
 
       define_method(:install) do
         bin.install "graphjin"
@@ -29,22 +29,22 @@ class Graphjin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dosco/graphjin/releases/download/v3.20.56/graphjin_3.20.56_linux_amd64.tar.gz"
-      sha256 "cb8c09b10ccdecc508b6183b14186060551c89bcb42dd0febb6014aebbf0240f"
+      url "https://github.com/dosco/graphjin/releases/download/v3.20.57/graphjin_3.20.57_linux_amd64.tar.gz"
+      sha256 "59900204e07fddb7e7aa2033ab0f399ba5518fa90e699f0b34bebf6c82fa4554"
       define_method(:install) do
         bin.install "graphjin"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/dosco/graphjin/releases/download/v3.20.56/graphjin_3.20.56_linux_armv6.tar.gz"
-      sha256 "d4f3f9f031e95614fd9bfbb1da3c408d5bef1cf4a9181360e07cd99d2465867b"
+      url "https://github.com/dosco/graphjin/releases/download/v3.20.57/graphjin_3.20.57_linux_armv6.tar.gz"
+      sha256 "f2250411942fbbfc187c5dffdc07f00d6a319a5015b625933cb84073d11fcf0f"
       define_method(:install) do
         bin.install "graphjin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dosco/graphjin/releases/download/v3.20.56/graphjin_3.20.56_linux_arm64.tar.gz"
-      sha256 "6a7bdbb63db6f2bcd2493ba7a670d18ff960967e401e6f500243451994beca6a"
+      url "https://github.com/dosco/graphjin/releases/download/v3.20.57/graphjin_3.20.57_linux_arm64.tar.gz"
+      sha256 "b3163b69acf983a6f37cfeb55e4e45147371a57d3d70d2eb301a0b25bd98e940"
       define_method(:install) do
         bin.install "graphjin"
       end
